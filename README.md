@@ -29,7 +29,7 @@ A responsive and interactive Currency Converter web app that fetches live exchan
 
 ## 📸 Demo
 
-You can host it using GitHub Pages or Netlify and add the link here:
+You can host it using GitHub Pages :
 
 [Live Demo](https://HasibulAnsari.github.io/currency-converter/)
 

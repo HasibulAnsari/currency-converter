@@ -4,6 +4,7 @@ const button=document.querySelector("form button");
 const fromCurr =document.querySelector(".from select");
 const toCurr =document.querySelector(".to select");
 const msg=document.querySelector(".msg");
+const swapIcon=document.querySelector(".dropdown i");
 for(let select of dropdowns)
 {
     for(let currCode in countryList)
@@ -49,4 +50,10 @@ button.addEventListener("click",async (evt) => {
     let finalAmount = amtVal*rate;
     msg.innerText=`${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${toCurr.value}`;
 })
-
+swapIcon.addEventListener("click",() => {
+    let temp=fromCurr.value;
+    fromCurr.value=toCurr.value;
+    toCurr.value=temp;
+    updateFlag(fromCurr);
+    updateFlag(toCurr);
+})
